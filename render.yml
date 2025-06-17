@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: paygo-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "gunicorn wsgi:app"
